@@ -10,7 +10,8 @@
 </head>
 <body>
     <ul id="app">
-        <li>{{ email }}</li>
+        {{ generateEmail() }}
+        <li v-for="(i, index) in 10"> {{ emails[index] }} </li>
     </ul>
     <script src="script.js"></script>
 </body>
